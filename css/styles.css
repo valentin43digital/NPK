@@ -1,7 +1,12 @@
 h1 {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 30px;
+  line-height: 150%;
   color: #03608F;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 h1 .main {
@@ -9,9 +14,24 @@ h1 .main {
 }
 
 h2 {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 30px;
+  line-height: 150%;
   color: #03608F;
   margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #03608F;
+  margin-bottom: 10px;
 }
 
 .container-offer {
@@ -107,7 +127,9 @@ p {
   color: #333333;
   margin-bottom: 30px;
 }
-
+p a {
+  color:#035178;
+}
 nav .breadcrumb-item {
   font-family: 'PT Sans';
   font-weight: 400;
