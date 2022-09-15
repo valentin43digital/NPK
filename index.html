@@ -2,34 +2,362 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Производитель технических газов ООО НПК «ЭТТ»</title>
-     <link rel="stylesheet" href="/css/bootstrap.min.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Технические и криогенные газы от производителя ООО НПК «ЭТТ»</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/burger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-     <main>
-          <div class="container">
-               <div class="row">
-                    <div class="col-sm-6">
-                         <h1>Производство<br>технических газов<br>в Томске</h1>
-                         <button>Скачать прайслист</button>
-                         <button>Каталог</button>
-                    </div>
-               </div>
-               <div class="row">
-                    <div class="col-sm-6">
-                         Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements. Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements. Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.
-                    </div>
-               </div>
+<header>
+  <div class="header-frame">
+    <div class="container">
+      <div class="row">
+        <div class="col header-panel">
+          <a href="/"><img src="/logo.svg" alt="Главная страница сайта ООО НПК «ЭТТ»"></a>
+          <div class="header-right-side">
+            <div class="header-phone"><a href="tel:+73822609961">8 (3822) 60-99-61</a></div>
+            <button class="btn-white header-button text-nowrap">Заказать звонок</button>
+            <button class="burger_open_button" id="burger_open_button">
+              <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="4" fill="white"/>
+                <rect y="8" width="32" height="4" fill="white"/>
+                <rect y="16" width="32" height="4" fill="white"/>
+              </svg>
+            </button>
           </div>
-     </main>
-     <script src="./js/index.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="burger_modal" class="modal">
+    <div class="modal-dialog burger_dialog">
+      <div class="modal-content burger_content">
+        <div class="modal-header burger_header">
+          <button id="burger_close_button" class="btn burger_close_button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="29.8515" height="3.73144" transform="matrix(0.709864 0.704339 -0.709864 0.704339 2.80957 0)" fill="white"/>
+              <rect width="29.8515" height="3.73144" transform="matrix(0.709864 -0.704339 0.709864 0.704339 0 21.3718)" fill="white"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal-body d-flex flex-column align-items-center burger_body">
+          <ul class="list-group list-group-flush accordion burger_navlist">
+
+            <li class="list-group-item accordion-item burger_navlink">
+              <h3 class="accordion-button collapsed burger_accordion">Продукция</h3>
+              <ul class="list-group list-group-flush accordion-body burger_accordion_body collapse">
+                <li class="list-group-item burger_link">
+                  <a href="/products/azot/">Азот</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/acetilen/">Ацетилен</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/aceton-tehnicheskij/">Ацетон технический</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/argon/">Аргон</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/gashenaya-izvest/">Гашеная известь</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/karbid-kalciya/">Карбид кальция</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/kislorod/">Кислород</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/propan/">Пропан</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/uglekislota/">Углекислота</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/oborudovanie/">Сопутствующее оборудование</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-group-item accordion-item burger_navlink">
+              <h3 class="accordion-button collapsed burger_accordion">Услуги</h3>
+              <ul class="list-group list-group-flush accordion-body burger_accordion_body collapse">
+                <li class="list-group-item burger_link">
+                  <a href="/services/dostavka-gazov/">Доставка баллонов</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/arenda-ballonov/">Аренда баллона</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/osvidetelstvovanie/">Освидетельствование</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/remont-ballonov/">Ремонт баллонов</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/pokraska-ballonov/">Покраска баллона</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/produvka-ballona/">Продувка</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/licenses/">
+                <h3>Лицензии</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/press/">
+                <h3>Пресс-центр</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/suppliers/">
+                <h3>Поставщикам</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/about/">
+                <h3>О компании</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/contacts/">
+                <h3>Контакты</h3>
+              </a>
+            </li>
+          </ul>
+
+
+          <a href="tel:83833609961" class="d-block burger_link burger_description">8 (3822) 60-99-61</a>
+
+          <button class="btn btn-warning burger_send">Заказать звонок</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="header-navbar">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="/products/">Продукты</a>
+            <ul>
+              <li><a href="/products/azot/">Азот</a></li>
+              <li><a href="/products/acetilen/">Ацетилен</a></li>
+              <li><a href="/products/aceton-tehnicheskij/">Ацетон технический</a></li>
+              <li><a href="/products/argon/">Аргон</a></li>
+              <li><a href="/products/gashenaya-izvest/">Гашеная известь</a></li>
+              <li><a href="/products/karbid-kalciya/">Карбид кальция</a></li>
+              <li><a href="/products/kislorod/">Кислород</a></li>
+              <li><a href="/products/propan/">Пропан</a></li>
+              <li><a href="/products/uglekislota/">Углекислота</a></li>
+              <li><a href="/products/oborudovanie/">Сопутствующее оборудование</a></li>
+            </ul>
+          </li>
+          <li><a href="/services/">Услуги</a></li>
+          <li><a href="/licenses/">Лицензии</a></li>
+          <li><a href="/press/">Пресс-центр</a></li>
+          <li><a href="/suppliers/">Поставщикам</a></li>
+          <li><a href="/about/">О компании</a></li>
+          <li><a href="/contacts/">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="main-screen">
+    <div class="main-half">
+      <div class="container">
+        <div class="main-header">
+          <h1>Производство <br>
+            технических <br>
+            газов в Томске</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <h2>ПУБЛИКАЦИИ ПРЕСС-ЦЕНТРА</h2>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <a href="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/">
+          <div class="card card-style-article">
+            <img src="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/img.jpg" style="height: 140px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Как хранить технический азот на производстве</h5>
+              <p class="card-text">31.08.2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <a href="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/">
+          <div class="card card-style-article">
+            <img src="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/img.jpg" style="height: 140px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Как хранить технический азот на производстве</h5>
+              <p class="card-text">31.08.2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <a href="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/">
+          <div class="card card-style-article">
+            <img src="/press/kak-khranit-tekhnicheskiy-azot-na-proizvodstve/img.jpg" style="height: 140px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Как хранить технический азот на производстве</h5>
+              <p class="card-text">31.08.2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container client">
+    <div class="row">
+      <div class="col">
+        <h2>С нами работают</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-sibur.svg" class="client-logo">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-ees.svg" class="client-logo">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-Linde.svg" class="client-logo">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-latat.svg" class="client-logo">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-СКХ.svg" class="client-logo">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/img/logo-ОСК.svg" class="client-logo">
+      </div>
+    </div>
+  </div>
+  <div class="partner-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-sm-6">
+          <div class="partner-header">
+            Станьте нашим<br>партнером
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-sm-6">
+          <div class="partner-label">
+            Мы закупаем краску,<br>баллоны и сырье
+          </div>
+          <a href="/supplyers/"><button class="btn-yellow">Узнать подробнее</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer-frame">
+  <div class="container-sm">
+    <div class="row">
+      <div class="col footer-logo">
+        <a href="/"><img src="/logo.svg" alt="Главная страница сайта ООО НПК «ЭТТ»"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 footer-list">
+        <div class="footer-list-header"><a href="/products/">Продукция</a></div>
+        <ul>
+          <li><a href="/products/azot/">Азот</a></li>
+          <li><a href="/products/acetilen/">Ацетилен</a></li>
+          <li><a href="/products/aceton-tehnicheskij/">Ацетон технический</a></li>
+          <li><a href="/products/argon/">Аргон</a></li>
+          <li><a href="/products/gashenaya-izvest/">Гашеная известь</a></li>
+          <li><a href="/products/karbid-kalciya/">Карбид кальция</a></li>
+          <li><a href="/products/kislorod/">Кислород</a></li>
+          <li><a href="/products/propan/">Пропан</a></li>
+          <li><a href="/products/uglekislota/">Углекислота</a></li>
+          <li><a href="/products/oborudovanie/">Сопутствующее оборудование</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 footer-list">
+        <div class="footer-list-header"><a href="/services/">Услуги</a></div>
+        <ul>
+          <li><a href="/services/dostavka-gazov/">Доставка газов</a></li>
+          <li><a href="/services/arenda-ballonov/">Аренда баллонов</a></li>
+          <li><a href="/services/pokraska-ballonov/">Покраска баллонов</a></li>
+          <li><a href="/services/osvidetelstvovanie/">Освидетельствование</a></li>
+          <li><a href="/services/remont-ballonov/">Ремонт баллонов</a></li>
+          <li><a href="/services/produvka-ballona/">Продувка баллона</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 footer-list">
+        <div class="footer-list-header extra-margin"><a href="/licenses/">Лицензии</a></div>
+        <div class="footer-list-header extra-margin"><a href="/press/">Пресс-центр</a></div>
+        <div class="footer-list-header extra-margin"><a href="/suppliers/">Поставщикам</a></div>
+      </div>
+      <div class="col-lg-3 col-sm-6 footer-list">
+        <div class="footer-list-header extra-margin"><a href="/about/">О компании</a></div>
+        <div class="footer-list-header"><a href="/contacts/">Контакты</a></div>
+        <ul>
+          <li><a href="tel:+73822609961">8 (3822) 60-99-61</a></li>
+          <li><a href="mailto:info.npk.ett@gmail.com">info.npk.ett@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 footer-list">
+        <ul>
+          <li>634003, г.&nbsp;Томск, ул.&nbsp;Ачинская, д.&nbsp;9, офис&nbsp;501&nbsp;— Главный&nbsp;офис</li>
+          <li>г.&nbsp;Томск, Кузовлевский&nbsp;тракт, д.&nbsp;4/3&nbsp;— Производственно складская&nbsp;база</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-sm-6 footer-list">
+        <ul>
+          <li><a href="tel:+73822609961">Антикоррупционная политика</a></li>
+          <li><a href="tel:+73822609961">Политика обработки персональных&nbsp;данных</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 footer-list">
+        <ul>
+          <li>© 2014—2022, ООО НПК «ЭТТ»</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-sm-6 footer-list">
+        <ul>
+          <li><a href="https://43digital.agency/?utm_source=npk-ett">Разработка сайта 43DIGITAL</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/js/burger.js"></script>
 </body>
 
 </html>
