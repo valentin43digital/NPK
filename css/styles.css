@@ -286,7 +286,7 @@ a {
   justify-content: right;
   align-items: center;
 }
-.header-burger-icon {
+.burger_open_button {
   margin-left: 30px;
   display: none;
 }
@@ -460,7 +460,7 @@ nav ul li:hover > ul {
 }
 
 @media (max-width: 992px) {
-  .header-burger-icon {
+  .burger_open_button {
     display: block;
   }
   nav {

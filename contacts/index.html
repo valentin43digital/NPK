@@ -8,6 +8,7 @@
   <title>Контакты и реквизиты ООО НПК «ЭТТ»</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/popup.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
             <a href="/"><img src="/img/logo.svg" alt="Главная страница сайта ООО НПК «ЭТТ»"></a>
             <div class="header-right-side">
               <div class="header-phone"><a href="tel:+73822609961">8 (3822) 60-99-61</a></div>
-              <button onclick="togglePopup()" class="btn-white header-button text-nowrap">Заказать звонок</button>
+              <button id="popup_open_button" class="btn-white header-button text-nowrap">Заказать звонок</button>
               <input type="checkbox" id="overlay-input" />
               <label for="overlay-input" id="overlay-button"><span></span></label>
               <div id="overlay">
@@ -39,19 +40,6 @@
       </div>
     </div>
 
-    <div class="popup" id="popup-1">
-      <div class="content">
-       <div class="close-btn" onclick="togglePopup()">
-       x</div>
-        
-   <h1>Sign In</h1> 
-     <div class="input-field"><input placeholder="Email" class="validate"></div>
-     <div class="input-field"><input placeholder="Password" class="validate"></div>
-       <button class="second-button">Sign in</button>
-       <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
-      </div>
-     </div>
-    
     <div class="header-navbar">
       <div class="container">
         <nav>
@@ -162,6 +150,32 @@
         </div>
       </div>
     </div>
+
+    <!--Popup Start-->
+    <div id="popup_modal" class="modal">
+      <div class="modal-dialog popup_dialog">
+        <div class="modal-content popup_content">
+          <div class="modal-header popup_header">
+            <button id="popup_close_button" class="btn popup_close_button">
+                          <svg width="28" height="28" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M28.9913 2.56497L0.707031 30.8492M0.707122 1.15076L28.9914 29.435" stroke="white"
+                                  stroke-width="2" />
+                          </svg>
+                      </button>
+          </div>
+          <form id="popup_form" class="modal-body d-flex flex-column align-items-center popup_body">
+            <h2 class="text-center popup_caption">ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <input class="form-control-plaintext popup_input" type="text" name="name" id="popup_name" placeholder="Имя Фамилия">
+            <input class="form-control-plaintext popup_input" type="tel" name="tel" id="popup_tel" placeholder="+7 (999) 999 - 99 - 99">
+            <input class="form-control-plaintext popup_input" type="text" name="email" id="popup_email" placeholder="email@email.com ">
+            <p class="popup_description">*Отправляя форму вы соглашаетесь с политикой обработки персональных данных.
+            </p>
+            <button class="btn btn-warning popup_send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Popup End-->
   </main>
 
   <footer class="footer-frame">
@@ -241,12 +255,7 @@
     </div>
   </footer>
 
-  <script>
-    function togglePopup() {
-    document.getElementById("popup-1")
-     .classList.toggle("active");
-   }
-   </script>
+  <script src="/js/popup.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
   <title>Технические и криогенные газы от производителя ООО НПК «ЭТТ»</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/burger.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -23,8 +24,126 @@
           <div class="header-right-side">
             <div class="header-phone"><a href="tel:+73822609961">8 (3822) 60-99-61</a></div>
             <button class="btn-white header-button text-nowrap">Заказать звонок</button>
-            <div class="header-burger-icon" id="burger"><img src="/burger.svg"></div>
+            <button class="burger_open_button" id="burger_open_button">
+              <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="4" fill="white"/>
+                <rect y="8" width="32" height="4" fill="white"/>
+                <rect y="16" width="32" height="4" fill="white"/>
+              </svg>
+            </button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="burger_modal" class="modal">
+    <div class="modal-dialog burger_dialog">
+      <div class="modal-content burger_content">
+        <div class="modal-header burger_header">
+          <button id="burger_close_button" class="btn burger_close_button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="29.8515" height="3.73144" transform="matrix(0.709864 0.704339 -0.709864 0.704339 2.80957 0)" fill="white"/>
+              <rect width="29.8515" height="3.73144" transform="matrix(0.709864 -0.704339 0.709864 0.704339 0 21.3718)" fill="white"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal-body d-flex flex-column align-items-center burger_body">
+          <ul class="list-group list-group-flush accordion burger_navlist">
+
+            <li class="list-group-item accordion-item burger_navlink">
+              <h3 class="accordion-button collapsed burger_accordion">Продукция</h3>
+              <ul class="list-group list-group-flush accordion-body burger_accordion_body collapse">
+                <li class="list-group-item burger_link">
+                  <a href="/products/azot/">Азот</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/acetilen/">Ацетилен</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/aceton-tehnicheskij/">Ацетон технический</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/argon/">Аргон</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/gashenaya-izvest/">Гашеная известь</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/karbid-kalciya/">Карбид кальция</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/kislorod/">Кислород</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/propan/">Пропан</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/uglekislota/">Углекислота</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/products/oborudovanie/">Сопутствующее оборудование</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-group-item accordion-item burger_navlink">
+              <h3 class="accordion-button collapsed burger_accordion">Услуги</h3>
+              <ul class="list-group list-group-flush accordion-body burger_accordion_body collapse">
+                <li class="list-group-item burger_link">
+                  <a href="/services/dostavka-gazov/">Доставка баллонов</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/arenda-ballonov/">Аренда баллона</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/osvidetelstvovanie/">Освидетельствование</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/remont-ballonov/">Ремонт баллонов</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/pokraska-ballonov/">Покраска баллона</a>
+                </li>
+                <li class="list-group-item burger_link">
+                  <a href="/services/produvka-ballona/">Продувка</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/licenses/">
+                <h3>Лицензии</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/press/">
+                <h3>Пресс-центр</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/suppliers/">
+                <h3>Поставщикам</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/about/">
+                <h3>О компании</h3>
+              </a>
+            </li>
+            <li class="list-group-item text-center burger_navlink">
+              <a href="/contacts/">
+                <h3>Контакты</h3>
+              </a>
+            </li>
+          </ul>
+
+
+          <a href="tel:83833609961" class="d-block burger_link burger_description">8 (3822) 60-99-61</a>
+
+          <button class="btn btn-warning burger_send">Заказать звонок</button>
+
         </div>
       </div>
     </div>
@@ -49,12 +168,12 @@
               <li><a href="/products/oborudovanie/">Сопутствующее оборудование</a></li>
             </ul>
           </li>
-          <li><a href="services/">Услуги</a></li>
-          <li><a href="licenses/">Лицензии</a></li>
-          <li><a href="press/">Пресс-центр</a></li>
-          <li><a href="suppliers/">Поставщикам</a></li>
-          <li><a href="about/">О компании</a></li>
-          <li><a href="contacts/">Контакты</a></li>
+          <li><a href="/services/">Услуги</a></li>
+          <li><a href="/licenses/">Лицензии</a></li>
+          <li><a href="/press/">Пресс-центр</a></li>
+          <li><a href="/suppliers/">Поставщикам</a></li>
+          <li><a href="/about/">О компании</a></li>
+          <li><a href="/contacts/">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -188,12 +307,12 @@
       <div class="col-lg-3 col-sm-6 footer-list">
         <div class="footer-list-header"><a href="/services/">Услуги</a></div>
         <ul>
-          <li><a href="/products/dostavka-gazov/">Доставка газов</a></li>
-          <li><a href="/products/arenda-ballonov/">Аренда баллонов</a></li>
-          <li><a href="/products/pokraska-ballonov/">Покраска баллонов</a></li>
-          <li><a href="/products/osvidetelstvovanie/">Освидетельствование</a></li>
-          <li><a href="/products/remont-ballonov/">Ремонт баллонов</a></li>
-          <li><a href="/products/produvka-ballona/">Продувка баллона</a></li>
+          <li><a href="/services/dostavka-gazov/">Доставка газов</a></li>
+          <li><a href="/services/arenda-ballonov/">Аренда баллонов</a></li>
+          <li><a href="/services/pokraska-ballonov/">Покраска баллонов</a></li>
+          <li><a href="/services/osvidetelstvovanie/">Освидетельствование</a></li>
+          <li><a href="/services/remont-ballonov/">Ремонт баллонов</a></li>
+          <li><a href="/services/produvka-ballona/">Продувка баллона</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-sm-6 footer-list">
@@ -238,7 +357,7 @@
     </div>
   </div>
 </footer>
-
+<script src="/js/burger.js"></script>
 </body>
 
 </html>

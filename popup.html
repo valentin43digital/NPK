@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="popup_open_button">Open Popup</button>
+
+  <div id="popup_modal" class="modal">
+    <div class="modal-dialog popup_dialog">
+      <div class="modal-content popup_content">
+        <div class="modal-header popup_header">
+          <button id="popup_close_button" class="btn popup_close_button">
+                        <svg width="28" height="28" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.9913 2.56497L0.707031 30.8492M0.707122 1.15076L28.9914 29.435" stroke="white"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+        </div>
+        <form id="popup_form" class="modal-body d-flex flex-column align-items-center popup_body">
+          <h2 class="text-center popup_caption">ОСТАВЬТЕ ЗАЯВКУ</h2>
+          <input class="form-control-plaintext popup_input" type="text" name="name" id="popup_name" placeholder="Имя Фамилия">
+          <input class="form-control-plaintext popup_input" type="tel" name="tel" id="popup_tel" placeholder="+7 (999) 999 - 99 - 99">
+          <input class="form-control-plaintext popup_input" type="text" name="email" id="popup_email" placeholder="email@email.com ">
+          <p class="popup_description">*Отправляя форму вы соглашаетесь с политикой обработки персональных данных.
+          </p>
+          <button class="btn btn-warning popup_send">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="/js/popup.js"></script>
+
+</html>
