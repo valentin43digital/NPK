@@ -15,17 +15,8 @@ body {
   scrollbar-width: none;
   /* Firefox */
 }
-
-
-/* этот класс не нужен */
-
-.header {
-  height: 60px;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #035178;
+.burger-header{
+  margin-bottom: 30px;
 }
 
 .burger_open_button {
@@ -50,7 +41,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   height: 100%;
-  background-color: #035178;
+  background-color: #03608F;
   border: none;
   border-radius: 0;
 }
@@ -64,8 +55,12 @@ body {
 }
 
 .burger_close_button {
+  height: 20px;
+  line-height: 1;
   padding: 0;
   border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .burger_body {
